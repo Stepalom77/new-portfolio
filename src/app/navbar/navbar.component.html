@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg sticky-top" id="header">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/" id="header-link">
+    <a class="navbar-brand" (click)="ScrollIntoView('#home')" id="header-link">
       Home
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
@@ -9,13 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarNav" [class.collapse]="collapsed" (window:resize)="collapsed = true">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" aria-current="page" routerLink="#" id="header-link">About Me</a>
+          <a class="nav-link" aria-current="page" (click)="ScrollIntoView('#about')" id="header-link">About Me</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="#" id="header-link">My Projects</a>
+          <a class="nav-link" (click)="ScrollIntoView('#projects')" id="header-link">My Projects</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="#" id="header-link">Contact Me</a>
+          <a class="nav-link" (click)="ScrollIntoView('#contact')" id="header-link">Contact Me</a>
         </li>
       </ul>
     </div>

@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   collapsed:boolean = true
 
+  ScrollIntoView(elem: string) {
+    document.querySelector(elem)!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
 }
