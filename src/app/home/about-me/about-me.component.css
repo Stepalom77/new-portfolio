@@ -1,0 +1,19 @@
+#about-me {
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: row;
+}
+
+#about-title {
+  color: #1c739c;
+}
+
+#about-text{
+  color: #1c739c;
+  font-weight: 600;
+}
+
+#img-about {
+  display:flex;
+  align-items:center;
+}
