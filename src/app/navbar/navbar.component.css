@@ -1,0 +1,9 @@
+#header {
+  background-color: rgba(2, 2, 87, 0.882);
+  border-color: rgba(2, 2, 87, 0.882);
+}
+
+#header-link {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 600;
+}

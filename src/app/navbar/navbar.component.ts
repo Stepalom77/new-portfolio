@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  collapsed:boolean = true
 
 }
